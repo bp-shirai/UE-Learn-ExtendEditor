@@ -18,7 +18,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UQuickAssetAction ********************************************************
 #define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	DECLARE_FUNCTION(execTestFunc);
+	DECLARE_FUNCTION(execDuplicateAsset);
 
 
 SUPERMANAGER_API UClass* Z_Construct_UClass_UQuickAssetAction_NoRegister();

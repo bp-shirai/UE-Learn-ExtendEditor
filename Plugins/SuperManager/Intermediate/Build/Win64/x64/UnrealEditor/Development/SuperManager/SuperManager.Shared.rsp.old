@@ -286,6 +286,9 @@
 /I "D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/UnrealEditor/Inc/SuperManager/UHT"
 /I "D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Source"
 /I "D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Source/SuperManager/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/Blutility/UHT"
+/I "Editor/Blutility/Classes"
+/I "Editor/Blutility/Public"
 /I "D:/UnrealProjects/Learn_ExtendEditor/Intermediate/Build/Win64/x64/ExtendEditorEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"

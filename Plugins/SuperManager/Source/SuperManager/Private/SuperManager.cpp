@@ -2,6 +2,7 @@
 
 #include "SuperManager.h"
 
+
 #define LOCTEXT_NAMESPACE "FSuperManagerModule"
 
 void FSuperManagerModule::StartupModule()
@@ -16,5 +17,5 @@ void FSuperManagerModule::ShutdownModule()
 }
 
 #undef LOCTEXT_NAMESPACE
-	
+
 IMPLEMENT_MODULE(FSuperManagerModule, SuperManager)

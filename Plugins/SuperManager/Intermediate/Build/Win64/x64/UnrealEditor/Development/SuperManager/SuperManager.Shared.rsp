@@ -289,6 +289,11 @@
 /I "../Intermediate/Build/Win64/UnrealEditor/Inc/Blutility/UHT"
 /I "Editor/Blutility/Classes"
 /I "Editor/Blutility/Public"
+/I "../Plugins/Editor/EditorScriptingUtilities/Intermediate/Build/Win64/UnrealEditor/Inc/EditorScriptingUtilities/UHT"
+/I "../Plugins/Editor/EditorScriptingUtilities/Source"
+/I "../Plugins/Editor/EditorScriptingUtilities/Source/EditorScriptingUtilities/Public"
+/I "../Intermediate/Build/Win64/UnrealEditor/Inc/StaticMeshEditor/UHT"
+/I "Editor/StaticMeshEditor/Public"
 /I "D:/UnrealProjects/Learn_ExtendEditor/Intermediate/Build/Win64/x64/ExtendEditorEditor/Development/UnrealEd"
 /external:W0
 /external:I "ThirdParty/GuidelinesSupportLibrary/GSL-1144/include"
