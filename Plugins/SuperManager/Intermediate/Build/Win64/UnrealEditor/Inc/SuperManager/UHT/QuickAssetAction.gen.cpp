@@ -13,10 +13,42 @@ void EmptyLinkFunctionForGeneratedCodeQuickAssetAction() {}
 
 // ********** Begin Cross Module References ********************************************************
 BLUTILITY_API UClass* Z_Construct_UClass_UAssetActionUtility();
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+COREUOBJECT_API UClass* Z_Construct_UClass_UObject_NoRegister();
 SUPERMANAGER_API UClass* Z_Construct_UClass_UQuickAssetAction();
 SUPERMANAGER_API UClass* Z_Construct_UClass_UQuickAssetAction_NoRegister();
 UPackage* Z_Construct_UPackage__Script_SuperManager();
 // ********** End Cross Module References **********************************************************
+
+// ********** Begin Class UQuickAssetAction Function AddPrefixes ***********************************
+struct Z_Construct_UFunction_UQuickAssetAction_AddPrefixes_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "CallInEditor", "true" },
+		{ "ModuleRelativePath", "Public/AssetActions/QuickAssetAction.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UQuickAssetAction_AddPrefixes_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UQuickAssetAction, nullptr, "AddPrefixes", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UQuickAssetAction_AddPrefixes_Statics::Function_MetaDataParams), Z_Construct_UFunction_UQuickAssetAction_AddPrefixes_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UQuickAssetAction_AddPrefixes()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UQuickAssetAction_AddPrefixes_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UQuickAssetAction::execAddPrefixes)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->AddPrefixes();
+	P_NATIVE_END;
+}
+// ********** End Class UQuickAssetAction Function AddPrefixes *************************************
 
 // ********** Begin Class UQuickAssetAction Function DuplicateAsset ********************************
 struct Z_Construct_UFunction_UQuickAssetAction_DuplicateAsset_Statics
@@ -61,12 +93,44 @@ DEFINE_FUNCTION(UQuickAssetAction::execDuplicateAsset)
 }
 // ********** End Class UQuickAssetAction Function DuplicateAsset **********************************
 
+// ********** Begin Class UQuickAssetAction Function RemoveUnusedAssets ****************************
+struct Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "CallInEditor", "true" },
+		{ "ModuleRelativePath", "Public/AssetActions/QuickAssetAction.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UQuickAssetAction, nullptr, "RemoveUnusedAssets", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::Function_MetaDataParams), Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::Function_MetaDataParams)},  };
+UFunction* Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UQuickAssetAction::execRemoveUnusedAssets)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	P_THIS->RemoveUnusedAssets();
+	P_NATIVE_END;
+}
+// ********** End Class UQuickAssetAction Function RemoveUnusedAssets ******************************
+
 // ********** Begin Class UQuickAssetAction ********************************************************
 void UQuickAssetAction::StaticRegisterNativesUQuickAssetAction()
 {
 	UClass* Class = UQuickAssetAction::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "AddPrefixes", &UQuickAssetAction::execAddPrefixes },
 		{ "DuplicateAsset", &UQuickAssetAction::execDuplicateAsset },
+		{ "RemoveUnusedAssets", &UQuickAssetAction::execRemoveUnusedAssets },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -110,10 +174,20 @@ struct Z_Construct_UClass_UQuickAssetAction_Statics
 		{ "IncludePath", "AssetActions/QuickAssetAction.h" },
 		{ "ModuleRelativePath", "Public/AssetActions/QuickAssetAction.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PrefixMap_MetaData[] = {
+		{ "Category", "QuickAssetAction" },
+		{ "ModuleRelativePath", "Public/AssetActions/QuickAssetAction.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FStrPropertyParams NewProp_PrefixMap_ValueProp;
+	static const UECodeGen_Private::FClassPropertyParams NewProp_PrefixMap_Key_KeyProp;
+	static const UECodeGen_Private::FMapPropertyParams NewProp_PrefixMap;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UQuickAssetAction_AddPrefixes, "AddPrefixes" }, // 3189916729
 		{ &Z_Construct_UFunction_UQuickAssetAction_DuplicateAsset, "DuplicateAsset" }, // 3691833901
+		{ &Z_Construct_UFunction_UQuickAssetAction_RemoveUnusedAssets, "RemoveUnusedAssets" }, // 3528344412
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -121,6 +195,15 @@ struct Z_Construct_UClass_UQuickAssetAction_Statics
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UQuickAssetAction_Statics::NewProp_PrefixMap_ValueProp = { "PrefixMap", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UQuickAssetAction_Statics::NewProp_PrefixMap_Key_KeyProp = { "PrefixMap_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UQuickAssetAction_Statics::NewProp_PrefixMap = { "PrefixMap", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UQuickAssetAction, PrefixMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PrefixMap_MetaData), NewProp_PrefixMap_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UQuickAssetAction_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuickAssetAction_Statics::NewProp_PrefixMap_ValueProp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuickAssetAction_Statics::NewProp_PrefixMap_Key_KeyProp,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuickAssetAction_Statics::NewProp_PrefixMap,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UQuickAssetAction_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UQuickAssetAction_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UAssetActionUtility,
 	(UObject* (*)())Z_Construct_UPackage__Script_SuperManager,
@@ -132,11 +215,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UQuickAssetAction_Stati
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	FuncInfo,
-	nullptr,
+	Z_Construct_UClass_UQuickAssetAction_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	UE_ARRAY_COUNT(FuncInfo),
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_UQuickAssetAction_Statics::PropPointers),
 	0,
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UQuickAssetAction_Statics::Class_MetaDataParams), Z_Construct_UClass_UQuickAssetAction_Statics::Class_MetaDataParams)
@@ -158,10 +241,10 @@ UQuickAssetAction::~UQuickAssetAction() {}
 struct Z_CompiledInDeferFile_FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h__Script_SuperManager_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuickAssetAction, UQuickAssetAction::StaticClass, TEXT("UQuickAssetAction"), &Z_Registration_Info_UClass_UQuickAssetAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuickAssetAction), 3473210803U) },
+		{ Z_Construct_UClass_UQuickAssetAction, UQuickAssetAction::StaticClass, TEXT("UQuickAssetAction"), &Z_Registration_Info_UClass_UQuickAssetAction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuickAssetAction), 4071950003U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h__Script_SuperManager_844746833(TEXT("/Script/SuperManager"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h__Script_SuperManager_3042437028(TEXT("/Script/SuperManager"),
 	Z_CompiledInDeferFile_FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h__Script_SuperManager_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h__Script_SuperManager_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

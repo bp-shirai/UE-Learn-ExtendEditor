@@ -17,13 +17,15 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UQuickAssetAction ********************************************************
-#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execRemoveUnusedAssets); \
+	DECLARE_FUNCTION(execAddPrefixes); \
 	DECLARE_FUNCTION(execDuplicateAsset);
 
 
 SUPERMANAGER_API UClass* Z_Construct_UClass_UQuickAssetAction_NoRegister();
 
-#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUQuickAssetAction(); \
 	friend struct Z_Construct_UClass_UQuickAssetAction_Statics; \
@@ -34,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(UQuickAssetAction)
 
 
-#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UQuickAssetAction(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -46,13 +48,13 @@ public: \
 	NO_API virtual ~UQuickAssetAction();
 
 
-#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_12_PROLOG
-#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_GENERATED_BODY \
+#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_24_PROLOG
+#define FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_INCLASS_NO_PURE_DECLS \
+	FID_Learn_ExtendEditor_Plugins_SuperManager_Source_SuperManager_Public_AssetActions_QuickAssetAction_h_27_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
