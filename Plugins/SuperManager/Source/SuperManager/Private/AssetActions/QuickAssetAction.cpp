@@ -126,8 +126,7 @@ void UQuickAssetAction::FixUpRedirectors()
 {
 	TArray<UObjectRedirector*> RedirectorsToFixArray;
 
-	FAssetRegistryModule& AssetRegistryModule =
-		FModuleManager::Get().LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
+	FAssetRegistryModule& AssetRegistry = FModuleManager::Get().LoadModuleChecked<FAssetRegistryModule>("AssetRegistry");
 
 	FARFilter Filter;
 	Filter.bRecursivePaths = true;
@@ -136,18 +135,17 @@ void UQuickAssetAction::FixUpRedirectors()
 
 	TArray<FAssetData> OutRedirectors;
 
-	AssetRegistryModule.Get().GetAssets(Filter, OutRedirectors);
+	AssetRegistry.Get().GetAssets(Filter, OutRedirectors);
 
-	for (const FAssetData& RedirectorData : OutRedirectors)
+	for (const FAssetData& Redirector : OutRedirectors)
 	{
-		if (UObjectRedirector* RedirectorToFix = Cast<UObjectRedirector>(RedirectorData.GetAsset()))
+		if (UObjectRedirector* RedirectorToFix = Cast<UObjectRedirector>(Redirector.GetAsset()))
 		{
 			RedirectorsToFixArray.Add(RedirectorToFix);
 		}
 	}
 
+	FAssetToolsModule& AssetTools = FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools");
 
-	FAssetToolsModule& AssetToolsModule = FModuleManager::LoadModuleChecked<FAssetToolsModule>("AssetTools");
-
-	AssetToolsModule.Get().FixupReferencers(RedirectorsToFixArray);
+	AssetTools.Get().FixupReferencers(RedirectorsToFixArray);
 }

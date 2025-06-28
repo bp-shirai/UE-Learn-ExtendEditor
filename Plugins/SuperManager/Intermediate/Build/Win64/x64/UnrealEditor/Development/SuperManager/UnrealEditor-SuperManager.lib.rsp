@@ -8,8 +8,7 @@
 /NODEFAULTLIB
 "D:/UnrealProjects/Learn_ExtendEditor/Intermediate/Build/Win64/x64/ExtendEditorEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
 "D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/x64/UnrealEditor/Development/SuperManager/Module.SuperManager.cpp.obj"
+"D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/x64/UnrealEditor/Development/SuperManager/SuperManager.cpp.obj"
 "D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/x64/UnrealEditor/Development/SuperManager/QuickAssetAction.cpp.obj"
-"D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/x64/UnrealEditor/Development/SuperManager/QuickAssetAction.gen.cpp.obj"
-"D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/x64/UnrealEditor/Development/SuperManager/SuperManager.init.gen.cpp.obj"
 "D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/x64/UnrealEditor/Development/SuperManager/Default.rc2.res"
 /OUT:"D:/UnrealProjects/Learn_ExtendEditor/Plugins/SuperManager/Intermediate/Build/Win64/x64/UnrealEditor/Development/SuperManager/UnrealEditor-SuperManager.lib"

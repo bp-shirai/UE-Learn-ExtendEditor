@@ -4,6 +4,9 @@ Intermediate
 Saved
 Build
 
+Plugins/**/Binaries/*
+Plugins/**/Intermediate/*
+
 .vscode
 .vs
 *.VC.db

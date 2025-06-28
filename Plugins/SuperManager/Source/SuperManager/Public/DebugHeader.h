@@ -8,7 +8,7 @@
 
 namespace Debug
 {
-	void Print(const FString& Message, const FColor& Color)
+	static void Print(const FString& Message, const FColor& Color)
 	{
 		if (GEngine)
 		{
@@ -16,12 +16,12 @@ namespace Debug
 		}
 	}
 
-	void Log(const FString& Message)
+	static void Log(const FString& Message)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("%s"), *Message);
 	}
 
-	EAppReturnType::Type ShowMsgDialog(EAppMsgType::Type MsgType, const FString& Message, bool bShowMsgAsWarning = true)
+	static EAppReturnType::Type ShowMsgDialog(EAppMsgType::Type MsgType, const FString& Message, bool bShowMsgAsWarning = true)
 	{
 		if (bShowMsgAsWarning)
 		{
@@ -34,7 +34,7 @@ namespace Debug
 		}
 	}
 
-	void ShowNotifyInfo(const FString& Message)
+	static void ShowNotifyInfo(const FString& Message)
 	{
 		FNotificationInfo Info(ToText(Message));
 		Info.bUseLargeFont	= true;
